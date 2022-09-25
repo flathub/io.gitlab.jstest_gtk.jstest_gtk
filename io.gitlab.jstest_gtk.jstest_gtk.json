@@ -1,7 +1,7 @@
 {
     "app-id": "io.gitlab.jstest_gtk.jstest_gtk",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "41",
+    "runtime-version": "43",
     "sdk": "org.gnome.Sdk",
     "rename-icon": "jstest-gtk",
     "rename-desktop-file": "jstest-gtk.desktop",
