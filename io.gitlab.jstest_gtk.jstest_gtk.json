@@ -14,12 +14,7 @@
         "--socket=session-bus"
     ],
     "modules": [
-        "external/shared-modules/sigc++/sigc++-2.0.json",
-        "external/shared-modules/glibmm/glibmm-2.4.json",
-        "external/shared-modules/cairomm/cairomm-1.0.json",
-        "external/shared-modules/pangomm/pangomm-1.4.json",
-        "external/shared-modules/atkmm/atkmm-1.6.json",
-        "external/shared-modules/gtkmm/gtkmm-3.24.2.json",
+        "external/gtkmm.json",
         {
             "name": "jstest-gtk",
             "buildsystem": "cmake-ninja",
