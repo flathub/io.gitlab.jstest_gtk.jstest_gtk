@@ -11,7 +11,8 @@
         "--share=ipc",
         "--socket=x11",
         "--socket=wayland",
-        "--socket=session-bus"
+        "--filesystem=xdg-run/gvfsd", "--talk-name=org.gtk.vfs.*",
+        "--own-name=com.gmail.grumbel.jstest-gtk"
     ],
     "modules": [
         "external/gtkmm.json",
