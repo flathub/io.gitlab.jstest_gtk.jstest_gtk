@@ -6,6 +6,7 @@
     "rename-icon": "jstest-gtk",
     "rename-desktop-file": "jstest-gtk.desktop",
     "rename-appdata-file": "jstest-gtk.appdata.xml",
+    "command": "jstest-gtk",
     "finish-args": [
         "--device=all",
         "--share=ipc",
