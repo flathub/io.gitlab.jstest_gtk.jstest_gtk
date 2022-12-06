@@ -1,25 +1,22 @@
 {
     "app-id": "io.gitlab.jstest_gtk.jstest_gtk",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "41",
+    "runtime-version": "43",
     "sdk": "org.gnome.Sdk",
     "rename-icon": "jstest-gtk",
     "rename-desktop-file": "jstest-gtk.desktop",
     "rename-appdata-file": "jstest-gtk.appdata.xml",
+    "command": "jstest-gtk",
     "finish-args": [
         "--device=all",
         "--share=ipc",
         "--socket=x11",
         "--socket=wayland",
-        "--socket=session-bus"
+        "--filesystem=xdg-run/gvfsd", "--talk-name=org.gtk.vfs.*",
+        "--own-name=com.gmail.grumbel.jstest-gtk"
     ],
     "modules": [
-        "external/shared-modules/sigc++/sigc++-2.0.json",
-        "external/shared-modules/glibmm/glibmm-2.4.json",
-        "external/shared-modules/cairomm/cairomm-1.0.json",
-        "external/shared-modules/pangomm/pangomm-1.4.json",
-        "external/shared-modules/atkmm/atkmm-1.6.json",
-        "external/shared-modules/gtkmm/gtkmm-3.24.2.json",
+        "external/gtkmm.json",
         {
             "name": "jstest-gtk",
             "buildsystem": "cmake-ninja",
@@ -31,7 +28,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/jstest-gtk/jstest-gtk.git",
-                    "commit": "420317b412297929f7380259893e49e443450035"
+                    "commit": "8e84777a956068b76b293d91f03490140b744ace"
                 }
             ]
         }
