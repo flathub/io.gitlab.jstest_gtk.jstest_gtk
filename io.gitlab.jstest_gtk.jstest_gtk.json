@@ -3,6 +3,7 @@
     "runtime": "org.gnome.Platform",
     "runtime-version": "43",
     "sdk": "org.gnome.Sdk",
+    "command": "jstest-gtk",
     "rename-icon": "jstest-gtk",
     "rename-desktop-file": "jstest-gtk.desktop",
     "rename-appdata-file": "jstest-gtk.appdata.xml",
@@ -21,8 +22,7 @@
             "name": "jstest-gtk",
             "buildsystem": "cmake-ninja",
             "config-opts": [
-                "-DCMAKE_BUILD_TYPE=Release",
-                "-DCMAKE_INSTALL_PREFIX:PATH=/app"
+                "-DCMAKE_BUILD_TYPE=Release"
             ],
             "sources": [
                 {
